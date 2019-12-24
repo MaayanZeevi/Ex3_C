@@ -20,7 +20,7 @@ int getWord(char w[]){
 
 
     int counter = 0;
-    while (*w != '\n' && *w != '\t' && *w != ' '){
+    while (*w != '\n' && *w != '\t' && *w != ' '&&counter<WORD){
         counter++;
         w++;
     }
@@ -181,10 +181,7 @@ void print_similar_words(char * str){
             
         }
         P = line;
-       int i = 0;
-        while(i > LINE){
-            *(line+ i) = '\0';
-        } 
+      
     }
  
 }
